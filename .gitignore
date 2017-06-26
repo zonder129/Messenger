@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Dirs
+libraries/
+cmake-build-debug/
+.idea/
+
+# Qt files
+*.pro.*
+*.autosave
+CMakeLists.txt
+
+

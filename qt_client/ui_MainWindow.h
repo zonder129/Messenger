@@ -66,6 +66,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(800, 600);
+        // Выровнить код
         MainWindow->setStyleSheet(QLatin1String("\n"
 "#titleLabel {\n"
 "background: white;\n"

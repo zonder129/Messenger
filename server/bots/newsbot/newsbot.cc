@@ -4,7 +4,7 @@ std::time_t Newsbot::DateToTime(int year, int month, int day) {
 	tm tmp = tm();
 	tmp.tm_mday = day;
 	tmp.tm_mon = month-1;
-	tmp.tm_year = year - 1900;
+	tmp.tm_year = year - 1900; // дать имя магическим константам
 	return mktime(&tmp);
 }
 
@@ -73,6 +73,8 @@ std::time_t Newsbot::DateParse(const std::string &pubDate) {
 	std::sscanf(pubDate.c_str(), "%[A-Za-z], %d %[A-Za-z] %d %d:%d:%d %s", &week, &day, &ch_month, &year, &hour, &minute, &second, &time_zone);
 	std::string month(ch_month);
 	std::map <std::string, int> mapping;
+
+	// Лучше использовать enum
 	mapping["Jan"] = 1;
 	mapping["Feb"] = 2;
 	mapping["Mar"] = 3;

@@ -1,0 +1,8 @@
+
+чтобы поставить sqlite 
+sudo apt-get install libsqlite3-dev
+
+В проекте есть файл cmake, из него в серверный cmake надо дописать
+include_directories(/usr/include)
+link_directories(/usr/lib)
+target_link_libraries(SQLite sqlite3)

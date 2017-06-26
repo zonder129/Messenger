@@ -1,0 +1,3 @@
+/home/gregor/Projects/TP/SQLite/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gregor/Projects/TP/SQLite/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gregor/Projects/TP/SQLite/cmake-build-debug/CMakeFiles/SQLite.dir

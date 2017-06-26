@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/SQLite.dir/main.cpp.o  -o SQLite -lsqlite3 

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tproger</title>
+	<atom:link href="https://tproger.ru/feed/" rel="self" type="application/rss+xml" />
+	<link>https://tproger.ru</link>
+	<description>Всё для программистов: новости, обучение, подборки интересного и многое другое</description>
+	<lastBuildDate>Mon, 19 Jun 2017 19:18:29 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>Google опубликовала Bird Sounds, новый эксперимент с ИИ</title>
+		<link>https://tproger.ru/news/google-ai-experiments-bird-sounds/</link>
+		<comments>https://tproger.ru/news/google-ai-experiments-bird-sounds/#respond</comments>
+		<pubDate>Mon, 19 Jun 2017 19:18:29 +0000</pubDate>
+		<dc:creator><![CDATA[Иван Бирюков]]></dc:creator>
+				<category><![CDATA[Новости]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Машинное обучение]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42993</guid>
+		<description><![CDATA[<p>В рамках программы A.I. Experiments Google опубликовала новый эксперимент. Он посвящён изучению криков тысяч различных птиц при помощи машинного обучения. Стоит отметить, что в ходе эксперимента использовались лишь неразмеченные аудиофайлы. При помощи технологии</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/news/google-ai-experiments-bird-sounds/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>63</wordsCount>
+		</item>
+		<item>
+		<title>Узнайте, кем во вселенной программистов являетесь вы — пройдите опрос разработчиков Developer Economics Survey Q3 2017</title>
+		<link>https://tproger.ru/sponsored/developer-economics-survey-q3-2017/</link>
+		<comments>https://tproger.ru/sponsored/developer-economics-survey-q3-2017/#respond</comments>
+		<pubDate>Mon, 19 Jun 2017 12:32:12 +0000</pubDate>
+		<dc:creator><![CDATA[Типичный программист]]></dc:creator>
+				<category><![CDATA[Спонсорское]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42912</guid>
+		<description><![CDATA[<p>Что за&#160;опрос? Глобальный опрос разработчиков, регулярно проводимый нашими друзьями из&#160;VisionMobile по&#160;всему миру. Вопросы посвящены инструментам, обучению и&#160;профессиональному развитию и&#160;помогают компаниям и&#160;самим разработчикам лучше ориентироваться в&#160;трендах. Опрос также позволит сравнить себя</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/sponsored/developer-economics-survey-q3-2017/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>276</wordsCount>
+		</item>
+		<item>
+		<title>Хочу стать веб-разработчиком: подробный план по изучению JavaScript</title>
+		<link>https://tproger.ru/sponsored/javascript-curriculum/</link>
+		<comments>https://tproger.ru/sponsored/javascript-curriculum/#respond</comments>
+		<pubDate>Mon, 19 Jun 2017 09:20:21 +0000</pubDate>
+		<dc:creator><![CDATA[Geek Brains]]></dc:creator>
+				<category><![CDATA[Спонсорское]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Веб-разработка]]></category>
+		<category><![CDATA[Для начинающих]]></category>
+		<category><![CDATA[Обучение программированию]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42457</guid>
+		<description><![CDATA[<p>Веб-разработка — одно из самых простых и оттого популярных направлений среди начинающих программистов. Для работы достаточно любого текстового редактора и браузера, не нужно изучать алгоритмы на продвинутом уровне, результат каждого этапа написания программы нагляден —</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/sponsored/javascript-curriculum/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>1103</wordsCount>
+		</item>
+		<item>
+		<title>Что творится с шифраторами паролей?!</title>
+		<link>https://tproger.ru/articles/wtf-password-encryptors/</link>
+		<comments>https://tproger.ru/articles/wtf-password-encryptors/#respond</comments>
+		<pubDate>Sun, 18 Jun 2017 21:43:11 +0000</pubDate>
+		<dc:creator><![CDATA[Антон Машков]]></dc:creator>
+				<category><![CDATA[/dev/null]]></category>
+		<category><![CDATA[Статьи]]></category>
+		<category><![CDATA[Безопасность]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42932</guid>
+		<description><![CDATA[<p>IT-безумие продолжается и теперь, после регуляторов громкости, под горячую руку программистов попали шифраторы паролей. Вот что наваяли энтузиасты к этому моменту: View post on imgur.com View post on imgur.com View</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/articles/wtf-password-encryptors/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>131</wordsCount>
+		</item>
+		<item>
+		<title>Google выпустила новый API для распознавания объектов при помощи TensorFlow</title>
+		<link>https://tproger.ru/news/google-tensorflow-object-detection-api/</link>
+		<comments>https://tproger.ru/news/google-tensorflow-object-detection-api/#respond</comments>
+		<pubDate>Sun, 18 Jun 2017 07:37:46 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Александров]]></dc:creator>
+				<category><![CDATA[Новости]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Машинное обучение]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42854</guid>
+		<description><![CDATA[<p>Google выпустила TensorFlow Object Detection API, предназначенный для распознавания объектов на изображениях. Инструмент получился одновременно простым и мощным, и он уже хорошо зарекомендовал себя в бенчмарках. Что может новый API? Среди моделей, добавленных в API, есть</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/news/google-tensorflow-object-detection-api/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>173</wordsCount>
+		</item>
+		<item>
+		<title>Приложение Microsoft Pix научилось превращать фото в графические иллюстрации</title>
+		<link>https://tproger.ru/news/microsoft-pix-turns-photos-to-art/</link>
+		<comments>https://tproger.ru/news/microsoft-pix-turns-photos-to-art/#respond</comments>
+		<pubDate>Sat, 17 Jun 2017 08:41:24 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Александров]]></dc:creator>
+				<category><![CDATA[Новости]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Искусственный интеллект]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42807</guid>
+		<description><![CDATA[<p>Microsoft выпустила обновление iOS-приложения Microsoft Pix, которое добавляет Prisma-подобную функциональность. Изначально приложение предназначалось для улучшений фотографий на вашем iPhone путем настройки цветов, экспозиции и других параметров. Что изменилось? В приложения была добавлена функция</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/news/microsoft-pix-turns-photos-to-art/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>216</wordsCount>
+		</item>
+		<item>
+		<title>Google представила MobileNets, мобильное семейство моделей для распознавания изображений</title>
+		<link>https://tproger.ru/news/google-mobilenets-visual-recognition/</link>
+		<comments>https://tproger.ru/news/google-mobilenets-visual-recognition/#respond</comments>
+		<pubDate>Fri, 16 Jun 2017 14:47:00 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Юрченко]]></dc:creator>
+				<category><![CDATA[Новости]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Нейронные сети]]></category>
+		<category><![CDATA[Распознавание]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42732</guid>
+		<description><![CDATA[<p>Google выпустила MobileNets, набор моделей TensorFlow для распознавания визуальных объектов. Он рассчитан для использования на маломощных устройствах вроде смартфонов. Зачем нужны MobileNets? При помощи этого набора моделей часть задач вроде идентификации объектов</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/news/google-mobilenets-visual-recognition/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>94</wordsCount>
+		</item>
+		<item>
+		<title>Google запустит новую утилиту Backup and Sync взамен Google Диска</title>
+		<link>https://tproger.ru/news/backup-and-sync-google-drive/</link>
+		<comments>https://tproger.ru/news/backup-and-sync-google-drive/#respond</comments>
+		<pubDate>Fri, 16 Jun 2017 09:04:14 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Александров]]></dc:creator>
+				<category><![CDATA[Новости]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Инструменты]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42771</guid>
+		<description><![CDATA[<p>28 июня 2017 года Google запустит Backup and Sync — утилиту, предназначенную для синхронизации файлов и фото с облачным хранилищем. Она является обновленной версией Google Диска, совмещенной с Google Фото, и будет работать на компьютерах под управлением</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/news/backup-and-sync-google-drive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>87</wordsCount>
+		</item>
+		<item>
+		<title>Создание простого блога на Node.js</title>
+		<link>https://tproger.ru/translations/simple-blog-node-js/</link>
+		<comments>https://tproger.ru/translations/simple-blog-node-js/#respond</comments>
+		<pubDate>Thu, 15 Jun 2017 20:30:56 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Юрченко]]></dc:creator>
+				<category><![CDATA[Переводы]]></category>
+		<category><![CDATA[DIY]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Node.js]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42380</guid>
+		<description><![CDATA[<p>В этой статье мы покажем вам, как создать простой блог с помощью Node.js и Cosmic JS. Давайте начнем. Прим. перев. Также вы можете посмотреть наш материал по созданию простого мессенджера</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/translations/simple-blog-node-js/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>392</wordsCount>
+		</item>
+		<item>
+		<title>Курс «Мобильная разработка»</title>
+		<link>https://tproger.ru/video/mobile-dev/</link>
+		<comments>https://tproger.ru/video/mobile-dev/#respond</comments>
+		<pubDate>Thu, 15 Jun 2017 19:56:41 +0000</pubDate>
+		<dc:creator><![CDATA[Дмитрий Баранчук]]></dc:creator>
+				<category><![CDATA[Видео]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Для начинающих]]></category>
+		<category><![CDATA[Мобильная разработка]]></category>
+		<category><![CDATA[Обучающие курсы]]></category>
+
+		<guid isPermaLink="false">https://tproger.ru/?p=42749</guid>
+		<description><![CDATA[<p>Русскоязычный видеокурс для начинающих разработчиков, посвященный основам мобильной разработки. Цель курса — дать знания об основных концепциях разработки для мобильных устройств и общее представление о процессе разработки приложений под Android.</p>
+<p>— <a rel="nofollow" href="https://tproger.ru">Tproger</a>.</p>
+]]></description>
+		<wfw:commentRss>https://tproger.ru/video/mobile-dev/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<wordsCount>64</wordsCount>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 1850/1898 objects using memcache
+Page Caching using memcache
+Content Delivery Network via tproger2.azureedge.net
+Minified using memcache
+Database Caching using memcache
+Application Monitoring using New Relic
+
+ Served from: tproger.ru @ 2017-06-19 22:39:50 by W3 Total Cache --> 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gregor/Projects/TP/SQLite/main.cpp
+iostream
+-
+string.h
+-
+sqlite3.h
+/home/gregor/Projects/TP/SQLite/sqlite3.h
+

@@ -26,7 +26,7 @@ void MainWindow::on_loginButton_clicked()
     // если поле логина остается пустым, то показывает сообщение пользователю
     if(!userLineEdit->text().isEmpty()) {
         warning_label->setText("CONNECTION SET");
-        socket->connectToHost("localhost", 4200);  // вынести магическую константу в хедер и дать ей имя
+        socket->connectToHost("localhost", HostNumber);  // вынести магическую константу в хедер и дать ей имя
     } else {
         warning_label->setText(QString("YOU NOT ENTERED LOGIN"));
     }

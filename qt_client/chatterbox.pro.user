@@ -1,3 +1,5 @@
+файлы настройки IDE лучше вынести в .gitignore и удалить из репозитория
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
 <!-- Written by QtCreator 3.5.1, 2017-06-18T09:05:39. -->

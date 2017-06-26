@@ -37,11 +37,12 @@ def get_summ(words):
         return "Not found"
     return model.most_similar(positive=words)[0][0].encode()
 
-def get_raz(words_positiv, words_negative):
+def get_raz(words):
     words = words.decode("utf-8")
     try:
-        words_positiv = get_clear(words_positiv)
-        words_negative = get_clear(words_negative)
+        words = get_clear(words)
+        words_positiv = words[0]
+        words_negative = words[1]
     except KeyError:
         return "Not found"
     return model.most_similar(positive=words_positiv, negative=words_negative)[0][0].encode()

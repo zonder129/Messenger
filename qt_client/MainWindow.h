@@ -22,4 +22,5 @@ class MainWindow : public QMainWindow, public Ui::MainWindow
     private:
 
         QTcpSocket *socket;
+        const int HostNumber = 4200;
 };

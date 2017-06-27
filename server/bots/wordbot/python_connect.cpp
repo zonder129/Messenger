@@ -12,16 +12,17 @@ python_connect::python_connect()
         exit(1);
     }
     pDict = PyModule_GetDict(pModule);
+    pArgs = PyTuple_New(1);
 }
 python_connect::~python_connect(){
     Py_Finalize();
 }
-char *python_connect::getRezult(const char *dostring){
+char *python_connect::getRezult(char *dostring){
     char *s = NULL;
     if((s = strstr(dostring, GET_LIKE))!=NULL){
-        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(GET_LIKE));
         s +=sizeof(GET_LIKE);
-        PyObject *pFunc = PyDict_GetItemString(pDict, s);
+        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(s));
+        PyObject *pFunc = PyDict_GetItemString(pDict, GET_LIKE);
         PyObject *pValue = NULL;
         if (PyCallable_Check(pFunc)){
             pValue = PyObject_CallObject(pFunc, pArgs);
@@ -30,9 +31,9 @@ char *python_connect::getRezult(const char *dostring){
         }
         return  PyBytes_AsString(pValue);
     }else if((s = strstr(dostring, GET_NOT_MACH))!=NULL){
-        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(GET_NOT_MACH));
         s +=sizeof(GET_NOT_MACH);
-        PyObject *pFunc = PyDict_GetItemString(pDict, s);
+        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(s));
+        PyObject *pFunc = PyDict_GetItemString(pDict, GET_NOT_MACH);
         PyObject *pValue = NULL;
         if (PyCallable_Check(pFunc)){
             pValue = PyObject_CallObject(pFunc, pArgs);
@@ -41,9 +42,9 @@ char *python_connect::getRezult(const char *dostring){
         }
         return  PyBytes_AsString(pValue);
     }else if((s = strstr(dostring, GET_RAZ))!=NULL){
-        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(GET_RAZ));
         s +=sizeof(GET_RAZ);
-        PyObject *pFunc = PyDict_GetItemString(pDict, s);
+        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(s));
+        PyObject *pFunc = PyDict_GetItemString(pDict, GET_RAZ);
         PyObject *pValue = NULL;
         if (PyCallable_Check(pFunc)){
             pValue = PyObject_CallObject(pFunc, pArgs);
@@ -52,9 +53,9 @@ char *python_connect::getRezult(const char *dostring){
         }
         return  PyBytes_AsString(pValue);
     }else if((s = strstr(dostring, GET_SUMM))!=NULL){
-        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(GET_SUMM));
         s +=sizeof(GET_SUMM);
-        PyObject *pFunc = PyDict_GetItemString(pDict, s);
+        PyTuple_SetItem(pArgs, 0, PyBytes_FromString(s));
+        PyObject *pFunc = PyDict_GetItemString(pDict, GET_SUMM);
         PyObject *pValue = NULL;
         if (PyCallable_Check(pFunc)){
             pValue = PyObject_CallObject(pFunc, pArgs);

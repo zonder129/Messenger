@@ -18,7 +18,7 @@ class python_connect
 public:
     python_connect();
     ~python_connect();
-    char *getRezult(const char*);
+    char *getRezult(char *);
 
 private:
     PyObject *pModule, *pName, *pDict, *pArgs;

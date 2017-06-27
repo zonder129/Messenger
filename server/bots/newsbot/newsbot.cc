@@ -73,8 +73,9 @@ std::time_t Newsbot::DateParse(const std::string &pubDate) {
 	std::sscanf(pubDate.c_str(), "%[A-Za-z], %d %[A-Za-z] %d %d:%d:%d %s", &week, &day, &ch_month, &year, &hour, &minute, &second, &time_zone);
 	std::string month(ch_month);
 	std::map <std::string, int> mapping;
+	std::map <std::string, int>::iterator it;
+	
 
-	// Лучше использовать enum
 	mapping["Jan"] = 1;
 	mapping["Feb"] = 2;
 	mapping["Mar"] = 3;
@@ -87,72 +88,15 @@ std::time_t Newsbot::DateParse(const std::string &pubDate) {
 	mapping["Oct"] = 10;
 	mapping["Nov"] = 11;
 	mapping["Dec"] = 12;
-
+	
 	int month_t = 0;
-	switch(mapping[month]) {
-		case 1: month_t = 1;
-				break;
-		case 2: month_t = 2;
-				break;
-		case 3: month_t = 3;
-				break;
-		case 4: month_t = 4;
-				break;
-		case 5: month_t = 5;
-				break;
-		case 6: month_t = 6;
-				break;
-		case 7: month_t = 7;
-				break;
-		case 8: month_t = 8;
-				break;
-		case 9: month_t = 9;
-				break;
-		case 10: month_t = 10;
-				break;
-		case 11: month_t = 11;
-				break;
-		case 12: month_t = 12;
-				break;																				
-		default: std::cout << "Месяц не распознан"<< std::endl;
-				 return 0;
-	}
-
-	std::time_t pubDate_t = DateToTime(year, month_t, day);
-	return pubDate_t;
-}
-
-
-void Newsbot::ShowParsedResult(std::vector< std::vector<std::string> > ParsedDoc) {
-	for(int i = 0; i < ParsedDoc.size(); i++) {
-		for(int j = 0; j < 4; j++) {
-			std::cout << ParsedDoc[i][j] << std::endl;
-		}
-	}
-}
-
-void Newsbot::HelpInfo() { 
-	std::cout << "В вашем распоряжении следующие комады:\n";
-	std::cout << "/Nhelp - содержит команды и их описание.\n";
-	std::cout << "/Nadd - добавляет RSS канал к вашему списку каналов с настройками по умолчанию.\n";
-	std::cout << "/Nsettings - переводит пользователя в меню настроек.\n";
-	std::cout << "/Ndelete - удаляет RSS, уже переданный пользователем боту.\n";
-
-}
-
-bool Newsbot::AddUrl() {
-	std::cout << "Введите URL RSS канала: ";
-	std::cin >> url;
-	TiXmlDocument doc = LoadFile(url);
-	if(doc.Error()){
-		std::cout << "Не удалось загрузить файл. Возможно ваш URL не существует. Хотите ввести URL еще раз?(y/n)";
-		std::string choice;
-		std::cin >> choice;
-		if (choice == "y" || choice == "\n") {
-			return 1;
-		} else { 
-			return 0;
-		}
+	
+	it = mymap.find(month);
+	if (it != mymap.end()){
+	  month_t = it->second;
+	} else {
+	  std::cout << "Месяц не распознан"<< std::endl;
+	  return 0;
 	}
 
 	DatabaseNewFeed(url);

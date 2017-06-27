@@ -56,7 +56,7 @@ void talk_to_client :: answer_to_client() {
         read_request();
         process_request();
     }
-    catch (boost::system::system_error&) {
+    catch(boost::system::system_error&) {
         std::cout<<"stop   ";
         stop();
     }
@@ -64,9 +64,10 @@ void talk_to_client :: answer_to_client() {
 
 // Читаем из сокета сообщение от клиента.
 void talk_to_client :: read_request() {
-    if ( sock_.available())
+    if(sock_.available()) {
         already_read_ += sock_.read_some(
                 buffer(buff_ + already_read_, max_msg - already_read_));
+    }
 }
 
 // Массив клиентов.
@@ -78,7 +79,7 @@ boost::recursive_mutex cs; // Thread-safe access to clients array.
 // Поток, принимающий клиентов.
 void accept_thread() {
     ip::tcp::acceptor acceptor(service, ip::tcp::endpoint(ip::tcp::v4(), 8004));
-    while (true) {
+    while(true) {
         client_ptr new_(new talk_to_client);
         acceptor.accept(new_->sock());
         boost::recursive_mutex::scoped_lock lk(cs);
@@ -88,10 +89,10 @@ void accept_thread() {
 
 // Поток, обрабатывающий существующих клиентов.
 void handle_clients_thread() {
-    while (true) {
+    while(true) {
         boost::this_thread::sleep( millisec(5000));
         // boost::recursive_mutex::scoped_lock lk(cs);
-        for(array::iterator b = clients.begin(),e = clients.end(); b != e; ++b){
+        for(array::iterator b = clients.begin(),e = clients.end(); b != e; ++b) {
             std::cout<<(*b)->username()<<" ";
             (*b)->answer_to_client();
         }
@@ -116,9 +117,15 @@ void talk_to_client:: process_request() {
     std::cout<<msg;  // Лишнее
     std::copy(buff_ + already_read_, buff_ + max_msg, buff_);
     already_read_ -= pos + 1;
-    if (msg.find("login ") == 0) on_login(msg);
-    else if ( msg.find("ask_clients") == 0) on_clients();
-    else send_to_all(msg); // !!!!!!!!!!!!!!!!!!!!!!!!!
+    if(msg.find("login ") == 0) {
+        on_login(msg) 
+    } else { 
+        if ( msg.find("ask_clients") == 0) {
+            on_clients();
+        } else {
+            send_to_all(msg);
+        }
+    }
 }
 
 // Запонминаем клиента (логин).
@@ -128,7 +135,7 @@ void talk_to_client::on_login(const std::string & msg) {
     // Работа с БД.
     GetAllUsers();
     int UserID = GetUserID(username_);
-    if (UserID == -1) {
+    if(UserID == -1) {
         std::cout << "Пользователя с логином " << username_ << " найти не удалось " << std::endl;
         InsertUser(username_, password_);
         write("Создана учетная запись\n");
@@ -142,7 +149,7 @@ void talk_to_client::on_login(const std::string & msg) {
             return;
         }
         ReturnPassword = GetUserPassword(username_);
-        if (ReturnPassword == password_){
+        if(ReturnPassword == password_) {
             std::cout << "Пароль введенный пользователем совпадает с паролем в базе и равен "
                       << ReturnPassword;
             write("Успешная авторизация\n");
@@ -161,8 +168,9 @@ void talk_to_client::on_clients() {
     std::string msg, resultMsg;
     {
         // boost::recursive_mutex::scoped_lock lk(cs);
-        for( array::const_iterator b = clients.begin(), e = clients.end() ;b != e; ++b)
+        for(array::const_iterator b = clients.begin(), e = clients.end() ;b != e; ++b) {
             msg += (*b)->username() + " ";
+        }
     }
     resultMsg = "clients " + msg;
     send_to_all(resultMsg);
@@ -175,7 +183,7 @@ void talk_to_client::write(const std::string & msg) {
 }
 
 // Групповая рассылка.
-void send_to_all (std::string &str){
+void send_to_all(std::string &str) {
     str += "\n";
     std::cout << "Групповая рассылка: " << str << std::endl;
     for(array::iterator b = clients.begin(),e = clients.end(); b != e; ++b){
